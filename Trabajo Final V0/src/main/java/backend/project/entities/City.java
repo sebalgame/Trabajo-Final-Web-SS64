@@ -19,6 +19,7 @@ public class City {
 
     private String name;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "city", fetch = FetchType.EAGER)
     private List<Event> events;
 }
