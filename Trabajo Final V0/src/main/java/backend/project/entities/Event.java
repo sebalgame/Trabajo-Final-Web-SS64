@@ -24,14 +24,17 @@ public class Event {
     private String accessCode;
     private String image;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "city_id")
     private City city;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "event_type_id")
     private EventType eventType;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "promoter_id")
     private Promoter promoter;
