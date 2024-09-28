@@ -23,6 +23,7 @@ public class Client {
     private String phone;
     private String dni;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
