@@ -19,6 +19,7 @@ public class Comment {
     private String commentType;
     private String description;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "client_id")
     private Client client;
