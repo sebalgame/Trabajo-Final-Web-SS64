@@ -19,6 +19,7 @@ public class Authority {
 
     private String name;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "authority", fetch = FetchType.EAGER)
     private List<User> users;
 }
